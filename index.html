@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BellyFuel - Delicious Food Delivered Fast</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0iI0ZGNzQ0MDsiIC8+CiAgPHRleHQgeD0iMTYiIHk9IjIxIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgU2Fucy1TZXJpZiI+QkY8L3RleHQ+Cjwvc3ZnPg=="
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0iI0ZGNzQ0MDsiIC8+CiAgPHRleHQgeD0iMTYiIHk9IjIxIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgU2Fucy1TZXJpZiI+QkY8L3RleHQ+Cjwvc3ZnPg=="
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a
+          href="index.html"
+          class="logo"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+          "
+        >
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <img
+              src="logo.png"
+              alt="BellyFuel Logo"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <span
+            class="site-name"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700;
+              font-size: 1.5rem;
+              color: #ff6347;
+              letter-spacing: 1px;
+            "
+          >
+            Belly<span style="color: #28a745">Fuel</span>
+          </span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html" class="active">Food</a></li>
+            <li><a href="cart.html" id="cart-link">Cart</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <div
+          class="hero-section"
+          style="
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          "
+        >
+          <h1 style="font-size: 3rem; color: #ff6347; margin-bottom: 20px">
+            Welcome to BellyFuel
+          </h1>
+          <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px">
+            Your one-stop destination for delicious and freshly prepared meals.
+            Order now and satisfy your cravings!
+          </p>
+          <a href="food.html" class="btn btn-primary">Order Now</a>
+        </div>
+
+        <h2 class="page-title" style="margin-top: 60px">Popular Items</h2>
+        <div class="food-grid">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Classic Burger"
+              class="food-image"
+            />
+            <div class="food-card-content">
+              <h3>Classic Burger</h3>
+              <p class="price">₹180.00</p>
+              <button class="btn btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8fDA%3D"
+              alt="Margherita Pizza"
+              class="food-image"
+            />
+            <div class="food-card-content">
+              <h3>Margherita Pizza</h3>
+              <p class="price">₹250.00</p>
+              <button class="btn btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-card">
+            <img src="choleb.jpg" alt="Chole Bhature" class="food-image" />
+            <div class="food-card-content">
+              <h3>Chole Bhature</h3>
+              <p class="price">₹120.00</p>
+              <button class="btn btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 BellyFuel. All Rights Reserved.</p>
+      </div>
+      <!-- Footer / Credit -->
+<p style="text-align:center; font-family:Arial, sans-serif; color:#555; margin-top:20px; font-size:14px;">
+  Created with <span style="color:red;">&#10084;</span> by Vinay Pandey
+</p>
+
+    </footer>
+    <div id="notification-popup">Item added to cart!</div>
+    <script src="script.js"></script>
+  </body>
+</html>

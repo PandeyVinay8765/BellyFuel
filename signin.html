@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BellyFuel - Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0iI0ZGNzQ0MDsiIC8+CiAgPHRleHQgeD0iMTYiIHk9IjIxIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgU2Fucy1TZXJpZiI+QkY8L3RleHQ+Cjwvc3ZnPg=="
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a
+          href="index.html"
+          class="logo"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+          "
+        >
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <img
+              src="logo.png"
+              alt="BellyFuel Logo"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <span
+            class="site-name"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700;
+              font-size: 1.5rem;
+              color: #ff6347;
+              letter-spacing: 1px;
+            "
+          >
+            Belly<span style="color: #28a745">Fuel</span>
+          </span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html" class="active">Food</a></li>
+            <li><a href="cart.html" id="cart-link">Cart</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <div class="form-container">
+        <h1 class="page-title">Sign In</h1>
+        <form action="#">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="btn btn-primary form-btn">
+            Sign In
+          </button>
+        </form>
+        <p class="form-switch">
+          Don't have an account? <a href="signup.html">Sign Up</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 BellyFuel. All Rights Reserved.</p>
+      </div>
+      <!-- Footer / Credit -->
+<p style="text-align:center; font-family:Arial, sans-serif; color:#555; margin-top:20px; font-size:14px;">
+  Created with <span style="color:red;">&#10084;</span> by Vinay Pandey
+</p>
+
+    </footer>
+  </body>
+</html>

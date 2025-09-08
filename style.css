@@ -1,0 +1,404 @@
+/* ---------- Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-content {
+    padding: 40px 0;
+}
+
+/* ---------- Navbar (Logo + Links Inline) ---------- */
+.navbar {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img,
+.logo .logo-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6347;
+    letter-spacing: 1px;
+}
+
+.site-name span {
+    color: #28a745;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #ff6347;
+    color: #fff;
+}
+
+.nav-links li a.active {
+    background: #28a745;
+    color: #fff;
+}
+
+/* ---------- Food Page ---------- */
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6347;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.food-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.food-card-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.food-card-content .price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #28a745;
+    margin-bottom: 12px;
+}
+
+.food-card-content .btn {
+    width: 100%;
+}
+
+/* ---------- Forms (Sign In / Sign Up) ---------- */
+.form-container {
+    background: #fff;
+    max-width: 450px;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff6347;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    background: #e5533d;
+}
+
+.form-switch {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.form-switch a {
+    color: #28a745;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-switch a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Cart Page ---------- */
+.cart-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.cart-item-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-actions {
+    text-align: right;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.btn-quantity {
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-quantity:hover {
+    background: #e5533d;
+}
+
+.cart-item-total {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.btn-remove {
+    background: #dc3545;
+    border: none;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-remove:hover {
+    background: #b52b38;
+}
+
+.cart-summary {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.cart-summary h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.btn-checkout {
+    background: #28a745;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #218838;
+}
+
+.empty-cart-message {
+    text-align: center;
+    margin: 25px 0;
+    color: #777;
+}
+
+/* ---------- Buttons (Shared) ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background: #ff6347;
+    color: #fff;
+    border: none;text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: #e5533d;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 25px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ---------- Notification Popup ---------- */
+#notification-popup,
+.popup-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: none;
+    animation: fadeInOut 3s forwards;
+    z-index: 2000;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
