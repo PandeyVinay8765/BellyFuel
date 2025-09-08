@@ -1,6 +1,8 @@
+
 # BellyFuel 🍔🍕🍟
 
 BellyFuel is a **fast food delivery website** that allows users to browse, select, and order food online. Designed to be **simple, modern, and user-friendly**, it showcases various food items with a cart and checkout system.
+👉 Try it out here: https://bellyfuel.netlify.app/
 
 ---
 
